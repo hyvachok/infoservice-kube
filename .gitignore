@@ -1,4 +1,5 @@
 .vscode/
+.vagrant/
 
 # OS generated files #
 ######################
