@@ -5,9 +5,9 @@ ENV['VAGRANT_NO_PARALLEL'] = 'yes'
 
 Vagrant.configure(2) do |config|
 
-  config.vm.provision "shell", path: "/rke/init-node.sh"
+  config.vm.provision "shell", path: "rke/init-node.sh"
 
-  NodeCount = 4
+  NodeCount = 5
 
   # Kubernetes Nodes
   (1..NodeCount).each do |i|
